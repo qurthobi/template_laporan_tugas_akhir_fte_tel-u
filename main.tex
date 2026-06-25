@@ -1,0 +1,51 @@
+\documentclass[a4paper, 12pt]{report}
+\usepackage{template_tugas_akhir_fte}
+
+\begin{document}
+\onehalfspacing
+\input{glossaries}
+\input{FrontMatter/HalamanCover}
+\clearpage
+\pagenumbering{roman}
+\setcounter{page}{2}
+\input{FrontMatter/LembarPengesahan}
+\clearpage
+\input{FrontMatter/LembarOrisinalitas}
+\clearpage
+\input{FrontMatter/Abstrak}
+\clearpage
+\input{FrontMatter/Abstract}
+\clearpage
+\input{FrontMatter/KataPengantar}
+\clearpage
+\input{FrontMatter/UcapanTerimaKasih}
+\clearpage
+\singlespacing
+\addcontentsline{toc}{chapter}{\MakeUppercase{Daftar Isi}}
+\tableofcontents
+\clearpage
+\addcontentsline{toc}{chapter}{\MakeUppercase{Daftar Gambar}}
+\listoffigures
+\clearpage
+\addcontentsline{toc}{chapter}{\MakeUppercase{Daftar Tabel}}
+\listoftables
+\clearpage
+\onehalfspacing
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\input{Chapters/1_Pendahuluan}
+\clearpage
+\input{Chapters/2_Tinjauan_Pustaka}
+\clearpage
+\input{Chapters/3_Perancangan_Sistem}
+\clearpage
+\input{Chapters/4_Hasil_Pengujian_dan_Analisis}
+\clearpage
+\input{Chapters/5_Kesimpulan_dan_Saran}
+\clearpage
+\addcontentsline{toc}{chapter}{\MakeUppercase{Daftar Pustaka}}
+\printbibliography[title={\MakeUppercase{Daftar Pustaka}}]
+\clearpage 
+\input{lampiran}
+\clearpage
+\end{document}
