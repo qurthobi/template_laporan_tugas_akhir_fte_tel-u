@@ -1,0 +1,86 @@
+\begin{titlepage}
+   \begin{center}
+
+   % ==================================================
+   % Judul Tugas Akhir dalam Bahasa Indonesia
+   % Gunakan huruf kapital pada setiap kata penting
+   % ==================================================
+   \large\MakeUppercase{\textbf{Judul dalam Bahasa Indonesia}}\\
+   % Contoh:
+   % Sistem Deteksi Burung Berbasis TinyML untuk Monitoring Keanekaragaman Hayati
+
+   \vspace{2em}
+
+   % ==================================================
+   % Judul Tugas Akhir dalam Bahasa Inggris
+   % Terjemahan resmi dari judul Bahasa Indonesia
+   % ==================================================
+   \large\MakeUppercase{\textit{Title in English}}\\
+   % Example:
+   % TinyML-Based Bird Detection System for Biodiversity Monitoring
+
+   \vspace{2em}
+
+   % Jenis dokumen
+   \MakeUppercase{\textbf{Tugas Akhir}}\\
+
+   % Keterangan pengajuan tugas akhir
+   \normalsize Diajukan sebagai syarat mata kuliah Tugas Akhir\\
+
+   % ==================================================
+   % Nama program studi
+   % Sesuaikan dengan program studi mahasiswa
+   % ==================================================
+   Program Studi S1 Teknik Fisika \\
+   % Contoh:
+   % Program Studi S1 Teknik Elektro
+   % Program Studi S1 Teknik Telekomunikasi
+
+   \vspace{2em}
+
+   Disusun oleh:\\
+
+   % ==================================================
+   % Nama lengkap mahasiswa
+   % Ditulis sesuai data akademik
+   % ==================================================
+   \MakeUppercase{\textbf{NAMA PENULIS}}\\
+   % Contoh:
+   % AHMAD QURTHOBI
+
+   % ==================================================
+   % Nomor Induk Mahasiswa (NIM)
+   % ==================================================
+   \MakeUppercase{\textbf{NIM PENULIS}}\\
+   % Contoh:
+   % 120220001
+
+   \vfill
+
+   % ==================================================
+   % Logo universitas
+   % Pastikan file logo tersedia pada folder Gambar
+   % ==================================================
+   \includegraphics[width=0.5\textwidth]{Gambar/logoTelU.png}\\
+
+   \vspace{2em}
+
+   % ==================================================
+   % Nama fakultas
+   % Sesuaikan jika template digunakan oleh fakultas lain
+   % ==================================================
+   \large \MakeUppercase{\textbf{Fakultas Teknik Elektro}}\\
+
+   % Nama universitas
+   \MakeUppercase{\textbf{Universitas Telkom}}\\
+
+   % Kota universitas
+   \MakeUppercase{\textbf{Bandung}}\\
+
+   % Tahun penyusunan / tahun sidang
+   \textbf{\the\year}
+   % Atau dapat diganti manual, misalnya:
+   % \textbf{2026}
+
+   \end{center}
+\end{titlepage}
