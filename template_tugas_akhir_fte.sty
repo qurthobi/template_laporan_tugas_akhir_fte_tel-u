@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{template_tugas_akhir_fte}[2026/06/22 v2.0 Template Tugas Akhir FTE]
+\ProvidesPackage{template_tugas_akhir_fte_authorsyear}[2026/06/22 v2.0 Template Tugas Akhir FTE]
 
 % =========================================================
 % PACKAGES
@@ -35,18 +35,20 @@
 \RequirePackage{listings}
 
 % References and hyperlinks
-\RequirePackage[
+\usepackage[
   backend=biber,
-  bibstyle=ieee,
-  citestyle=numeric-comp,
-  sorting=none,
-  giveninits=true,
+  style=iso-authoryear,
+  sorting=nyt,
+  sortcites=true,
+  natbib=true,
+  giveninits=false,
+  terseinits=false,
+  maxcitenames=2,
+  uniquelist=false,
+  uniquename=false,
   doi=true,
   url=true,
   isbn=true,
-  maxbibnames=99,
-  maxcitenames=99,
-  date=year,
   language=indonesian
 ]{biblatex}
 \RequirePackage{hyperref}
@@ -67,11 +69,13 @@
 % -------------------------
 \addbibresource{referensi.bib}
 
-\renewcommand*{\multinamedelim}{\addcomma\space}
-\renewcommand*{\finalnamedelim}{\addcomma\addspace dan\space}
+% \renewcommand*{\multinamedelim}{\addcomma\space}
+\renewcommand*{\finalnamedelim}{\addspace dan\space}
 
 %Perbaikan untuk istilah  pada daftar pustaka
 \DefineBibliographyStrings{indonesian}{%
+  and = {dan},
+  andothers = {dkk\adddot},
   url = {Tersedia pada},
 }
 
@@ -184,5 +188,24 @@
 \renewcommand{\cfttabpresnum}{Tabel~}
 \renewcommand{\cfttabaftersnum}{\quad}
 \setlength{\cfttabnumwidth}{6em}
+
+% REMOVE EXTRA GAP IN LoF AND LoT BETWEEN CHAPTERS
+\setlength{\cftbeforechapskip}{0pt}
+\newcommand*{\noaddvspace}{\renewcommand*{\addvspace}[1]{}}
+\addtocontents{lof}{\protect\noaddvspace}
+\addtocontents{lot}{\protect\noaddvspace}
+
+% -------------------------
+% Remove Dot Leaders in ToC, LoF, LoT
+% -------------------------
+\renewcommand{\cftdot}{}
+
+\makeatother
+
+% -------------------------
+% Global List Settings (enumitem)
+% -------------------------
+\setlist[enumerate]{topsep=0pt, itemsep=0pt, parsep=0pt, leftmargin=*}
+\setlist[itemize]{topsep=0pt, itemsep=0pt, parsep=0pt, leftmargin=*}
 
 \endinput
